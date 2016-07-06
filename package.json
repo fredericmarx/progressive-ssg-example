@@ -1,0 +1,20 @@
+{
+  "name": "progressive-ssg-example",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "handlebars": "^4.0.5",
+    "metalsmith": "^2.1.0",
+    "metalsmith-collections": "^0.7.0",
+    "metalsmith-date-formatter": "^1.0.2",
+    "metalsmith-in-place": "^1.4.4",
+    "metalsmith-layouts": "^1.6.5",
+    "metalsmith-path": "^0.2.0",
+    "metalsmith-serve": "0.0.7",
+    "metalsmith-watch": "^1.0.3"
+  }
+}

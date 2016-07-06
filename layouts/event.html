@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>NodeTogether</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Index</a></li>
+        <li><a href="../schedule.html">Schedule</a></li>
+      </ul>
+    </nav>
+    <h1>{{name}}</h1>
+    <p>Location: {{location}}</p>
+    <p>Date: {{date}}</p>
+
+    <hr>
+
+    {{#if next}}
+    <p>Next event: <a href="../{{next.path}}">{{next.name}}</a></p>
+    {{/if}}
+    {{#if previous}}
+    <p>Previous event: <a href="../{{previous.path}}">{{previous.name}}</a></p>
+    {{/if}}
+
+    <hr>
+
+    <p><a href="../events.json">events.json</a></p>
+  </body>
+</html>

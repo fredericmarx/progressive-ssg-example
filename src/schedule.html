@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>NodeTogether</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+      </ul>
+    </nav>
+    <h1>Schedule</h1>
+    <div>
+      {{!-- Start dynamically generated list of events --}}
+    </div>
+    {{#each events}}
+    <hr>
+    <h2><a href="{{this.path}}">{{this.name}}</a></h2>
+    <p>Location: {{this.location}}</p>
+    <p>Date: {{this.date}}</p>
+    {{/each}}
+    <div>
+      {{!-- End dynamically generated list of events --}}
+    </div>
+
+    <hr>
+
+    <p><a href="events.json">events.json</a></p>
+  </body>
+</html>

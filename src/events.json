@@ -1,0 +1,10 @@
+{
+  "events": {
+    {{#each events}}
+    "{{this.name}}": {
+      "location": "{{this.location}}",
+      "date": "{{this.date}}"
+    }{{#unless @last}},{{/unless}}
+    {{/each}}
+  }
+}
